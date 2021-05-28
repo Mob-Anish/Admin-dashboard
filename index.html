@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="./admin.css" type="text/css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+        <!-- SIDEBAR -->
+        <input type="checkbox" class="menu__checkbox" id="sideview-crawl">
+        <div class="side-view">
+            <nav class="admin-view__menu">
+                <div class="admin-view__header">
+                    <h3 class="company-name">
+                        <span>ShopMe</span>
+                    </h3>
+                    <div class="menu-icon">
+                        <label for="sideview-crawl" class="menu-bar">
+                            <svg>
+                                <use xlink:href='./icons.svg#icon-menu'></use>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    <img src="./manga-cover.jpg" alt="admin-picture">
+                    <h3 class="admin-name">
+                        <span>Admin name</span>
+                    </h3>
+                </div>
+                <ul class="side-nav">
+                    <li class="side-nav__active">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href='./icons.svg#icon-home'></use>
+                            </svg>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href='./icons.svg#icon-package'></use>
+                            </svg>
+                            <span>Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href='./icons.svg#icon-user'></use>
+                            </svg>
+                            <span>Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href='./icons.svg#icon-briefcase'></use>
+                            </svg>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href='./icons.svg#icon-settings'></use>
+                            </svg>
+                            <span>Account</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <footer class="footer">
+                <p>&copy; ShopMe Corporation by Anish Manandhar</p>
+            </footer>
+        </div>
+
+        <!-- MAIN --->
+        <main class="main main-content">
+            <div class="header">
+                <h1>Welcome back, Anish 😎</h1>
+                <p>Time</p>
+            </div>
+            
+            <div class="overview-cards">
+                <div class="card product-card">
+                    <div class="title">
+                        <h2>Products</h2>
+                    </div>
+                    <span class="content product-content">
+                        <svg>
+                            <use xlink:href='./icons.svg#icon-package'></use>
+                        </svg>
+                        <div class="number">
+                            <h4>5</h4>
+                        </div>
+                    </span>
+                </div>
+                <div class="card user-card">
+                    <div class="title">
+                        <h2>Users</h2>
+                    </div>
+                    <span class="content user-content">
+                        <svg>
+                            <use xlink:href='./icons.svg#icon-user'></use>
+                        </svg>
+                        <div class="number">
+                            <h4>5</h4>
+                        </div>
+                    </span>
+                </div>
+                <div class="card order-card">
+                    <div class="title">
+                        <h2>Orders</h2>
+                    </div>
+                    <span class="content order-content">
+                        <svg>
+                            <use xlink:href='./icons.svg#icon-briefcase'></use>
+                        </svg>
+                        <div class="number">
+                            <h4>5</h4>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </main>
+</body>
+</html>
