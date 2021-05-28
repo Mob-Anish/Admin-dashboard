@@ -304,15 +304,11 @@ body {
 }
 
 @media screen and (max-width: 1256px) {
-  .main-content {
-    margin-left: 3rem;
-    width: 151rem;
-  }
-
   .overview-cards {
     display: grid;
+    max-width: 70%;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 4rem;
+    grid-column-gap: 8rem;
     padding-left: 15rem;
     transform: translateY(-5rem);
   }
@@ -327,7 +323,31 @@ body {
     padding: 2.5rem 3.5rem;
     border-radius: 2rem;
     width: 25rem;
-    height: 18rem;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 1108px) {
+  .overview-cards {
+    display: grid;
+    max-width: 40%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 8rem;
+    padding-left: 15rem;
+    transform: translateY(-5rem);
+  }
+
+  .overview-cards .card {
+    background-image: linear-gradient(
+      to right bottom,
+      var(--secondary-color),
+      var(--dark-green-color)
+    );
+    color: var(--white-color);
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    width: 22rem;
+    height: 15rem;
   }
 }
 
