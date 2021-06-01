@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="./admin.css" type="text/css">
     <title>Admin Dashboard</title>
@@ -40,7 +40,7 @@
                             <span>Home</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="side-nav__products">
                         <a href="#">
                             <svg>
                                 <use xlink:href='./icons.svg#icon-package'></use>
@@ -48,7 +48,7 @@
                             <span>Products</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="side-nav__users">
                         <a href="#">
                             <svg>
                                 <use xlink:href='./icons.svg#icon-user'></use>
@@ -56,7 +56,7 @@
                             <span>Users</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="side-nav__orders">
                         <a href="#">
                             <svg>
                                 <use xlink:href='./icons.svg#icon-briefcase'></use>
@@ -64,7 +64,7 @@
                             <span>Orders</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="side-nav__account">
                         <a href="#">
                             <svg>
                                 <use xlink:href='./icons.svg#icon-settings'></use>
@@ -129,5 +129,51 @@
                 </div>
             </div>
         </main>
+
+        <!-- Product Section -->
+        <section class="product-section">
+            <div class="header">
+                <h1>Products</h1>
+            </div>
+        </section>
+
+        <!-- User Section -->
+        <section class="user-section">
+            <div class="header">
+                <h1>Users</h1>
+            </div>
+        </section>
+
+        <!-- Order Section -->
+        <section class="order-section">
+            <div class="header">
+                <h1>Orders</h1>
+            </div>
+        </section>
+
+        <!-- Account Section -->
+        <section class="account-section">
+            <div class="header">
+                <h1>Account</h1>
+            </div>
+
+            <div class="account-info">
+                <div class="form-account info-name">
+                    <label>Name</label>
+                    <div class="account-field name-field">Admin Name</div>
+                </div>
+                <div class="form-account info-email">
+                    <label>Email Address</label>
+                    <div class="account-field email-field">Admin Email</div>
+                </div>
+                <div class="button-account">
+                    <button class="btn btn--green btn--admin">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <script src="app.js"></script>
 </body>
 </html>

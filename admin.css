@@ -35,7 +35,7 @@ html {
 body {
   line-height: 1.6;
   font-weight: 300;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: var(--grey-color);
   min-height: 100vh;
 }
@@ -67,6 +67,7 @@ body {
   height: 3rem;
   width: 3.5rem;
   fill: var(--dark-green-color);
+  cursor: pointer;
 }
 
 .admin-view__header {
@@ -367,3 +368,112 @@ body {
 }
 
 /* @media screen and (max-width: 1600 px) */
+
+.product-section {
+  display: none;
+  height: 100vh;
+  margin-left: 30rem;
+  background: var(--main-content-color);
+  padding: 5rem;
+}
+
+.user-section {
+  display: none;
+  height: 100vh;
+  margin-left: 30rem;
+  background: var(--main-content-color);
+  padding: 5rem;
+}
+
+.order-section {
+  display: none;
+  height: 100vh;
+  margin-left: 30rem;
+  background: var(--main-content-color);
+  padding: 5rem;
+}
+
+.account-section {
+  display: none;
+  height: 100vh;
+  margin-left: 30rem;
+  background: var(--main-content-color);
+  padding: 10rem 30rem;
+}
+
+.account-section .header {
+  font-size: 2rem;
+}
+
+.account-section div:not(:last-child) {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+}
+
+.account-info {
+  margin-top: 5rem;
+  padding: 5rem;
+}
+
+.account-info .form-account {
+  width: 50rem;
+}
+
+.account-info .form-account .account-field {
+  padding: 1.5rem 8rem;
+  background: #c0bebe;
+  color: var(--white-color);
+  text-align: center;
+  border-radius: 0.5rem;
+  font-weight: 400;
+}
+
+.button-account {
+  width: 50rem;
+  text-align: center;
+}
+
+.button-account .btn,
+.btn:link,
+.btn:visited {
+  font-size: 1.6rem;
+  padding: 1.4rem 3rem;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.3s;
+  font-weight: 400;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: none;
+  cursor: pointer;
+}
+
+.button-account .btn:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.button-account .btn:active {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.button-account .btn:focus {
+  outline: none;
+}
+
+.button-account .btn--green {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+.button-account .btn--green::after {
+  background-color: #55c57a;
+}
