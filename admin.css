@@ -262,111 +262,6 @@ body {
   font-size: 2.9rem;
 }
 
-@media screen and (max-width: 1600px) {
-  .side-view {
-    width: 9.2rem;
-  }
-
-  .main-content {
-    margin-left: 9.2rem;
-    width: 151rem;
-  }
-
-  .side-view .admin-view__menu .user-profile,
-  .side-view .admin-view__menu .admin-view__header h3,
-  .side-view .admin-view__menu .side-nav li a span,
-  .side-view .footer {
-    display: none;
-  }
-
-  .side-view .admin-view__menu .side-nav li a svg {
-    position: fixed;
-  }
-
-  .side-view .admin-view__menu .side-nav li:not(:last-child) {
-    margin-bottom: 3.5rem;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .main-content {
-    margin-left: 3rem;
-    width: 151rem;
-  }
-
-  .overview-cards {
-    display: grid;
-    max-width: 80%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 8rem;
-    padding-left: 15rem;
-    transform: translateY(-5rem);
-  }
-}
-
-@media screen and (max-width: 1256px) {
-  .overview-cards {
-    display: grid;
-    max-width: 70%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 8rem;
-    padding-left: 15rem;
-    transform: translateY(-5rem);
-  }
-
-  .overview-cards .card {
-    background-image: linear-gradient(
-      to right bottom,
-      var(--secondary-color),
-      var(--dark-green-color)
-    );
-    color: var(--white-color);
-    padding: 2.5rem 3.5rem;
-    border-radius: 2rem;
-    width: 25rem;
-    height: 15rem;
-  }
-}
-
-@media screen and (max-width: 1108px) {
-  .overview-cards {
-    display: grid;
-    max-width: 40%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 8rem;
-    padding-left: 15rem;
-    transform: translateY(-5rem);
-  }
-
-  .overview-cards .card {
-    background-image: linear-gradient(
-      to right bottom,
-      var(--secondary-color),
-      var(--dark-green-color)
-    );
-    color: var(--white-color);
-    padding: 2rem 3rem;
-    border-radius: 2rem;
-    width: 22rem;
-    height: 15rem;
-  }
-}
-
-@media screen and (max-width: 345px) {
-  .main-content {
-    margin-left: 4rem;
-  }
-
-  .overview-cards {
-    display: grid;
-    max-width: 80%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 4rem;
-    padding-left: 15rem;
-    transform: translateY(-5rem);
-  }
-}
-
 /* @media screen and (max-width: 1600 px) */
 
 .product-section {
@@ -374,7 +269,8 @@ body {
   height: 100vh;
   margin-left: 30rem;
   background: var(--main-content-color);
-  padding: 5rem;
+  padding-top: 10rem;
+  padding-left: 20rem;
 }
 
 .user-section {
@@ -382,7 +278,8 @@ body {
   height: 100vh;
   margin-left: 30rem;
   background: var(--main-content-color);
-  padding: 5rem;
+  padding-top: 10rem;
+  padding-left: 20rem;
 }
 
 .order-section {
@@ -390,7 +287,8 @@ body {
   height: 100vh;
   margin-left: 30rem;
   background: var(--main-content-color);
-  padding: 5rem;
+  padding-top: 10rem;
+  padding-left: 20rem;
 }
 
 .account-section {
@@ -398,10 +296,20 @@ body {
   height: 100vh;
   margin-left: 30rem;
   background: var(--main-content-color);
-  padding: 10rem 30rem;
+  padding-top: 10rem;
+  padding-left: 20rem;
 }
 
 .account-section .header {
+  font-size: 2rem;
+}
+.product-section .header {
+  font-size: 2rem;
+}
+.user-section .header {
+  font-size: 2rem;
+}
+.order-section .header {
   font-size: 2rem;
 }
 
@@ -476,4 +384,169 @@ body {
 
 .button-account .btn--green::after {
   background-color: #55c57a;
+}
+
+/* Screen resolution and menu post-checked */
+
+.menu__checkbox:checked ~ .product-section {
+  margin-left: 9.2rem;
+}
+.menu__checkbox:checked ~ .user-section {
+  margin-left: 9.2rem;
+}
+.menu__checkbox:checked ~ .order-section {
+  margin-left: 9.2rem;
+}
+.menu__checkbox:checked ~ .account-section {
+  margin-left: 9.2rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .side-view {
+    width: 9.2rem;
+  }
+
+  .main-content {
+    margin-left: 9.2rem;
+    width: 151rem;
+  }
+
+  .product-section {
+    margin-left: 9.2rem;
+    width: 151rem;
+    height: 100.8rem;
+  }
+
+  .user-section {
+    margin-left: 9.2rem;
+    width: 151rem;
+    height: 100.8rem;
+  }
+
+  .order-section {
+    margin-left: 9.2rem;
+    width: 151rem;
+    height: 100.8rem;
+  }
+
+  .account-section {
+    margin-left: 9.2rem;
+    width: 151rem;
+    height: 100.8rem;
+  }
+
+  .side-view .admin-view__menu .user-profile,
+  .side-view .admin-view__menu .admin-view__header h3,
+  .side-view .admin-view__menu .side-nav li a span,
+  .side-view .footer {
+    display: none;
+  }
+
+  .side-view .admin-view__menu .side-nav li a svg {
+    position: fixed;
+  }
+
+  .side-view .admin-view__menu .side-nav li:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .main-content {
+    margin-left: 3rem;
+    width: 151rem;
+  }
+
+  .product-section {
+    margin-left: 3rem;
+    width: 151rem;
+    height: 100.8rem;
+  }
+  .user-section {
+    margin-left: 3rem;
+    width: 151rem;
+    height: 100.8rem;
+  }
+  .order-section {
+    margin-left: 3rem;
+    width: 151rem;
+    height: 100.8rem;
+  }
+  .account-section {
+    margin-left: 3rem;
+    width: 151rem;
+    height: 100.8rem;
+  }
+
+  .overview-cards {
+    display: grid;
+    max-width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 8rem;
+    padding-left: 15rem;
+    transform: translateY(-5rem);
+  }
+}
+
+@media screen and (max-width: 1256px) {
+  .overview-cards {
+    display: grid;
+    max-width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 8rem;
+    padding-left: 15rem;
+    transform: translateY(-5rem);
+  }
+
+  .overview-cards .card {
+    background-image: linear-gradient(
+      to right bottom,
+      var(--secondary-color),
+      var(--dark-green-color)
+    );
+    color: var(--white-color);
+    padding: 2.5rem 3.5rem;
+    border-radius: 2rem;
+    width: 25rem;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 1108px) {
+  .overview-cards {
+    display: grid;
+    max-width: 40%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 8rem;
+    padding-left: 15rem;
+    transform: translateY(-5rem);
+  }
+
+  .overview-cards .card {
+    background-image: linear-gradient(
+      to right bottom,
+      var(--secondary-color),
+      var(--dark-green-color)
+    );
+    color: var(--white-color);
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    width: 22rem;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .main-content {
+    margin-left: 4rem;
+  }
+
+  .overview-cards {
+    display: grid;
+    max-width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4rem;
+    padding-left: 15rem;
+    transform: translateY(-5rem);
+  }
 }
