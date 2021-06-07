@@ -802,6 +802,144 @@ body {
   outline: none;
 }
 
+/*------  UPDATE PRODUCT CONTAINER ------*/
+.update--product_container {
+  display: none;
+  min-height: 100vh;
+  margin-left: 30rem;
+  background: var(--main-content-color);
+  padding-top: 10rem;
+  padding-left: 15rem;
+}
+
+.update--product_container .update--product_header {
+  width: 35rem;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.update--product_header .header {
+  font-size: 2rem;
+}
+
+.update--product_header .back--btn a{
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.update--product_header .back--btn span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.update--product_header .back--btn svg {
+  height: 3rem;
+  width: 3rem;
+  fill: var(--dark-green-color);
+}
+
+.update--product_container .form {
+  margin-top: 3rem;
+  margin-left: 17.5rem;
+}
+
+.update--product_container .form .form-update {
+  width: 40rem;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  flex-direction: column;
+}
+
+.update--product_container .form .form-update {
+  margin-bottom: 1.5rem;
+}
+
+.update--product_container .form .form-update label {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+.update--product_container .form .form-update input {
+  font-size: 1.5rem;
+  margin-top: 0.6rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.update--product_container .form .form-update textarea {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0.6rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.update--product_container .form .form-update input:focus {
+  outline: none;
+}
+
+.update--product_container .form .form-update textarea:focus {
+  outline: none;
+}
+
+.update--product_container .form .update--product {
+  margin-top: 3rem;
+  text-align: center;
+  width: 40rem;
+}
+
+.update--product_container .form .update--product .btn--update,
+.btn--update:link,
+.btn--update:visited {
+  font-size: 1.6rem;
+  padding: 1.4rem 3rem;
+  border-radius: 5rem;
+  text-transform: capitalize;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.3s;
+  font-weight: 400;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: none;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.form .update--product .btn--update:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.form .update--product .btn--update:active {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.form .update--product .btn--update:focus {
+  outline: none;
+}
+
+
 /*------ NEW USER CONTAINER -----*/
 .new--user_container {
   display: none;
@@ -939,6 +1077,146 @@ body {
   outline: none;
 }
 
+/*----- UPDATE USER CONTAINER  -----*/
+.update--user_container {
+  display: none;
+  min-height: 100vh;
+  margin-left: 30rem;
+  background: var(--main-content-color);
+  padding-top: 10rem;
+  padding-left: 15rem;
+}
+
+.update--user_container .update--user_header {
+  width: 35rem;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.update--user_header .header {
+  font-size: 2rem;
+}
+
+.update--user_header .back--btn a{
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.update--user_header .back--btn span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.update--user_header .back--btn svg {
+  height: 3rem;
+  width: 3rem;
+  fill: var(--dark-green-color);
+}
+
+.update--user_container .form {
+  margin-top: 3rem;
+  margin-left: 17.5rem;
+}
+
+.update--user_container .form .form-update {
+  width: 40rem;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  flex-direction: column;
+}
+
+.update--user_container .form .form-update {
+  margin-bottom: 1.5rem;
+}
+
+.update--user_container .form .form-update label {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+.update--user_container .form .form-update input {
+  font-size: 1.5rem;
+  margin-top: 0.6rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.update--user_container .form .form-update textarea {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0.6rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.update--user_container .form .form-update input:focus {
+  outline: none;
+}
+
+.update--user_container .form .form-update textarea:focus {
+  outline: none;
+}
+
+.update--user_container .form .update--user {
+  margin-top: 3rem;
+  text-align: center;
+  width: 40rem;
+}
+
+.update--user_container .form .update--user .btn--update,
+.btn--update:link,
+.btn--update:visited {
+  font-size: 1.6rem;
+  padding: 1.4rem 3rem;
+  border-radius: 5rem;
+  text-transform: capitalize;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.3s;
+  font-weight: 400;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: none;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.form .update--user .btn--update:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.form .update--user .btn--update:active {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.form .update--user .btn--update:focus {
+  outline: none;
+}
+
+
+
+
 
 /* Screen resolution and menu post-checked */
 
@@ -955,6 +1233,9 @@ body {
   margin-left: 9.2rem;
 }
 .menu__checkbox:checked ~ .new--product_container {
+  margin-left: 9.2rem;
+}
+.menu__checkbox:checked ~ .new--user_container {
   margin-left: 9.2rem;
 }
 
@@ -987,6 +1268,12 @@ body {
   }
 
   .new--product_container {
+    margin-left: 9.2rem;
+    width: 151rem;
+    height: 100.8rem;
+  }
+
+  .new--user_container {
     margin-left: 9.2rem;
     width: 151rem;
     height: 100.8rem;
@@ -1042,6 +1329,12 @@ body {
   }
 
   .new--product_container {
+    margin-left: 3rem;
+    width: 151rem;
+    height: 100.8rem;
+  }
+
+  .new--user_container {
     margin-left: 3rem;
     width: 151rem;
     height: 100.8rem;

@@ -454,6 +454,54 @@
             </form>
         </section>
 
+        <!---- UPDATE PRODUCT ---->
+        <section class="update--product_container">
+            <div class="update--product_header">
+                <div class="back--btn">
+                    <a>
+                        <svg>
+                            <use xlink:href='./icons.svg#icon-skip-back'></use>
+                        </svg>
+                        <span>Back</span>
+                    </a>
+                </div>
+                <div class="header">
+                    <h1>Update Product</h1> 
+                </div>
+            </div>
+            
+
+            <form class="form update--product__form">
+                <div class="form-update product__name">
+                    <label>Name</label>
+                    <input type="text" class="new--product_name" placeholder="Product Name" onfocus="this.placeholder= ''" onblur="this.placeholder= 'Product Name'" required>
+                </div>
+                <div class="form-update product__keyword">
+                    <label>Keyword</label>
+                    <input type="text" class="new--product_keyword" placeholder="Product Keyword" onfocus="this.placeholder= ''" onblur="this.placeholder= 'Product Keyword'" required>
+                </div>
+                <div class="form-update product__brand">
+                    <label>Brand</label>
+                    <input type="text" class="new--product_brand" placeholder="Product Brand" onfocus="this.placeholder= ''" onblur="this.placeholder= 'Product Brand'" required>
+                </div>
+                <div class="form-update product__description">
+                    <label>Description</label>
+                    <textarea class="new--product_description" rows="10" cols="40" placeholder="Product Description" onfocus="this.placeholder= ''" onblur="this.placeholder= 'Product Description'" required></textarea>
+                </div>
+                <div class="form-update product__price">
+                    <label>Price</label>
+                    <input type="text" class="new--product_price" placeholder="Product Price" onfocus="this.placeholder= ''" onblur="this.placeholder= 'Product Price'" required>
+                </div>
+                <div class="form-update product__image">
+                    <label>Image</label>
+                    <input type="text" class="new--product_image" placeholder="Product Image" onfocus="this.placeholder= ''" onblur="this.placeholder= 'Product Image'" required>
+                </div>
+                <div class="update--product">
+                    <button class="btn btn--update">Update</button>
+                </div>
+            </form>
+        </section>
+
         <!---- NEW USER ---->
         <section class="new--user_container">
             <div class="new--user_header">
@@ -490,6 +538,42 @@
                 </div>
                 <div class="new--user_create">
                     <button class="btn btn--create">Create</button>
+                </div>
+            </form>
+        </section>
+
+        <!------ UPDATE USER ----->
+        <section class="update--user_container">
+            <div class="update--user_header">
+                <div class="back--btn">
+                    <a>
+                        <svg>
+                            <use xlink:href='./icons.svg#icon-skip-back'></use>
+                        </svg>
+                        <span>Back</span>
+                    </a>
+                </div>
+                <div class="header">
+                    <h1>Update User</h1> 
+                </div>
+            </div>
+            
+
+            <form class="form update--user_form">
+                <div class="form-update user__name">
+                    <label>Name</label>
+                    <input type="text" class="update--user_name" placeholder="User Name" onfocus="this.placeholder= ''" onblur="this.placeholder= 'User Name'" required>
+                </div>
+                <div class="form-update user__email">
+                    <label>Email</label>
+                    <input type="text" class="update--user_email" placeholder="User Email" onfocus="this.placeholder= ''" onblur="this.placeholder= 'User Email'" required>
+                </div>
+                <div class="form-update user__password">
+                    <label>Password</label>
+                    <input type="password" class="update--user_password" placeholder="********" onfocus="this.placeholder= ''" onblur="this.placeholder= '********'" minlength='8' required>
+                </div>
+                <div class="update--user">
+                    <button class="btn btn--update">Update</button>
                 </div>
             </form>
         </section>
