@@ -457,7 +457,7 @@ body {
   border-bottom: 1px solid var(--dark-green-color);
 }
 
-.product-container .products-values .values a{
+.product-container .products-values .values a {
   height: 3rem;
   width: 3rem;
   fill: var(--dark-green-color);
@@ -465,7 +465,7 @@ body {
   margin-right: 1.1rem;
 }
 
-.product-container .products-values .values svg{
+.product-container .products-values .values svg {
   height: 3rem;
   width: 3rem;
   fill: var(--dark-green-color);
@@ -578,7 +578,7 @@ body {
   border-bottom: 1px solid var(--dark-green-color);
 }
 
-.user-container .users-values .values a{
+.user-container .users-values .values a {
   height: 3rem;
   width: 3rem;
   fill: var(--dark-green-color);
@@ -586,7 +586,7 @@ body {
   margin-right: 1.1rem;
 }
 
-.user-container .users-values .values svg{
+.user-container .users-values .values svg {
   height: 3rem;
   width: 3rem;
   fill: var(--dark-green-color);
@@ -689,7 +689,7 @@ body {
   font-size: 2rem;
 }
 
-.new--product_header .back--btn a{
+.new--product_header .back--btn a {
   cursor: pointer;
   display: -ms-flexbox;
   display: flex;
@@ -826,7 +826,10 @@ body {
   font-size: 2rem;
 }
 
-.update--product_header .back--btn a{
+.update--product_header .back--btn a:link,
+a:visited {
+  color: var(--grey-color);
+  text-decoration: none;
   cursor: pointer;
   display: -ms-flexbox;
   display: flex;
@@ -939,7 +942,6 @@ body {
   outline: none;
 }
 
-
 /*------ NEW USER CONTAINER -----*/
 .new--user_container {
   display: none;
@@ -964,7 +966,7 @@ body {
   font-size: 2rem;
 }
 
-.new--user_header .back--btn a{
+.new--user_header .back--btn a {
   cursor: pointer;
   display: -ms-flexbox;
   display: flex;
@@ -1101,7 +1103,7 @@ body {
   font-size: 2rem;
 }
 
-.update--user_header .back--btn a{
+.update--user_header .back--btn a {
   cursor: pointer;
   display: -ms-flexbox;
   display: flex;
@@ -1213,10 +1215,6 @@ body {
 .form .update--user .btn--update:focus {
   outline: none;
 }
-
-
-
-
 
 /* Screen resolution and menu post-checked */
 
